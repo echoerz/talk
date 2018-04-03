@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 public class test extends BsaeActivity {
+    private EditText gamename;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class test extends BsaeActivity {
         {
             actionBar.hide();
         }
+        gamename = (EditText)findViewById(R.id.shuru1);
         Button button = (Button)findViewById(R.id.Button_4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +33,9 @@ public class test extends BsaeActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String gamename1 = gamename.getText().toString();
                 Intent intent = new Intent(test.this,File.class);
+                intent.putExtra("extra_data",gamename1);
                 startActivity(intent);
             }
         });

@@ -19,6 +19,7 @@ public class File extends AppCompatActivity {
     MediaPlayer mediaPlayer3 = null;
     MediaPlayer mediaPlayer4 = null;
     private ImageView imageView1;
+    private TextView yourgamename;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,10 @@ public class File extends AppCompatActivity {
         {
             actionBar.hide();
         }
+        Intent getname1 = getIntent();
+        String gamename2 = getname1.getStringExtra("extra_data");
+        yourgamename = (TextView)findViewById(R.id.text1);
+        yourgamename.setText(gamename2);
         imageView1 = (ImageView) findViewById(R.id.gifImageView2);
         mediaPlayer1 = MediaPlayer.create(this, R.raw.beijng);
         mediaPlayer2 = MediaPlayer.create(this,R.raw.hanxiu1);
@@ -133,16 +138,16 @@ public class File extends AppCompatActivity {
                 //  mediaPlayer1.start();
             }
         });
-        /*
+
         Button button4 = (Button)findViewById(R.id.button_4);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(File.this,MainActivity.class);
+                Intent intent = new Intent(File.this,chooseren.class);
                 //startActivity(intent);
                 startActivityForResult(intent, 1);
             }
-        });*/
+        });
         Button button5 = (Button)findViewById(R.id.button_music1);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
