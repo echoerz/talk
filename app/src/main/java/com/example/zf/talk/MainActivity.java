@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         msgList.add(msg1);
         Msg msg2 = new Msg("嗯？怎么有事吗？",Msg.TYPE_SENT);
         msgList.add(msg2);
-        Msg msg3 = new Msg("那个，你长得真帅哈哈哈",Msg.TYPE_RECEIVED);
+        Msg msg3 = new Msg("没事，想找你聊聊",Msg.TYPE_RECEIVED);
         msgList.add(msg3);
     }
 }

@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-public class talkchoose extends AppCompatActivity {
+public class talkchoose extends BsaeActivity {
     private String[] data = {"轩辕铁牛","上官翠花","欧阳铁柱","二营长的意大利炮","李泽言"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,14 @@ public class talkchoose extends AppCompatActivity {
                 if(position == 0) {startActivity(intent1);}
                 //setResult(RESULT_OK, intent);
                 //finish();
+            }
+        });
+        Button forceOffline =(Button)findViewById(R.id.Button_3);
+        forceOffline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.example.brosdcastbestpractice.FORCE_OFFLINE");
+                sendBroadcast(intent);
             }
         });
     }

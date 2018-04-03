@@ -36,7 +36,7 @@ public class File extends AppCompatActivity {
         mediaPlayer1.start();
         mediaPlayer1.setVolume(1,1);
         mediaPlayer1.setLooping(true);
-        Button button1 = (Button)findViewById(R.id.button_1);
+        Button button1 = (Button)findViewById(R.id.button_e);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +74,7 @@ public class File extends AppCompatActivity {
                 //overridePendingTransition(R.anim.zoomin, R.anim.zoomout);
             }
         });
-        Button button2 = (Button)findViewById(R.id.button_2);
+        Button button2 = (Button)findViewById(R.id.button_w);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +101,7 @@ public class File extends AppCompatActivity {
                 // mediaPlayer1.start();
             }
         });
-        Button button3 = (Button)findViewById(R.id.button_3);
+        Button button3 = (Button)findViewById(R.id.button_walk);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,6 +133,7 @@ public class File extends AppCompatActivity {
                 //  mediaPlayer1.start();
             }
         });
+        /*
         Button button4 = (Button)findViewById(R.id.button_4);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,7 +142,7 @@ public class File extends AppCompatActivity {
                 //startActivity(intent);
                 startActivityForResult(intent, 1);
             }
-        });
+        });*/
         Button button5 = (Button)findViewById(R.id.button_music1);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
