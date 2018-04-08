@@ -47,11 +47,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initMsgs(){
-        Msg msg1 = new Msg("在不，小新",Msg.TYPE_RECEIVED);
+        Msg msg1 = new Msg("今晚吃什么",Msg.TYPE_SENT);
         msgList.add(msg1);
-        Msg msg2 = new Msg("嗯？怎么有事吗？",Msg.TYPE_SENT);
+        Msg msg2 = new Msg("随便",Msg.TYPE_RECEIVED);
         msgList.add(msg2);
-        Msg msg3 = new Msg("没事，想找你聊聊",Msg.TYPE_RECEIVED);
+        Msg msg3 = new Msg("火锅？",Msg.TYPE_SENT);
         msgList.add(msg3);
+        Msg msg4 = new Msg("太辣了",Msg.TYPE_RECEIVED);
+        msgList.add(msg4);
+        Msg msg5 = new Msg("那吃什么",Msg.TYPE_SENT);
+        msgList.add(msg5);
+        Msg msg6 = new Msg("随便",Msg.TYPE_RECEIVED);
+        msgList.add(msg6);
     }
 }

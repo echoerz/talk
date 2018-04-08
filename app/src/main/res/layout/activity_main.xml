@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:scrollbarSize="200dp"
         />
     <LinearLayout
         android:layout_width="match_parent"

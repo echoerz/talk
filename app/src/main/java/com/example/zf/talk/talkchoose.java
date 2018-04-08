@@ -16,11 +16,7 @@ public class talkchoose extends BsaeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_talkchoose);
-        ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null)
-        {
-            actionBar.hide();
-        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 talkchoose.this,android.R.layout.simple_list_item_1,data
         );
@@ -43,7 +39,8 @@ public class talkchoose extends BsaeActivity {
                 //finish();
             }
         });
-        Button forceOffline =(Button)findViewById(R.id.Button_3);
+
+        Button forceOffline =(Button)findViewById(R.id.Button_3);    //发送下线广播
         forceOffline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".talkchoose" />
+        <activity android:name=".MainActivity"
+            android:label="轩辕铁牛"/>
+        <activity android:name=".talkchoose"
+            android:label="联系人"/>
         <activity android:name=".test" />
         <activity android:name=".File" />
         <activity android:name=".LoginActivity">
@@ -20,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chooseren"></activity>
+        <activity android:name=".chooseren" />
     </application>
 
 </manifest>

@@ -2,14 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@drawable/game_login">
 
     <LinearLayout
         android:id="@+id/buju_2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="#ffffff"
         >
 
         <Button
@@ -30,7 +31,7 @@
             android:layout_height="80dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:background="#ffffff"
+            android:background="#22eedd"
             android:gravity="center"
             android:textSize="20dp"
             android:layout_margin="20dp"

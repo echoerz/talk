@@ -173,6 +173,12 @@ public class File extends AppCompatActivity {
     }
 
     @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        mediaPlayer1.stop();
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         TextView textView = (TextView) findViewById(R.id.text1);
         switch (requestCode) {
@@ -200,7 +206,7 @@ public class File extends AppCompatActivity {
                         }
                         if(b == 4) {
                             imageView1.setImageResource(R.drawable.dong1);
-                            textView.setText("许墨");
+                            textView.setText("李泽言");
                         }
                     } catch (NumberFormatException e) {
                         e.printStackTrace();
